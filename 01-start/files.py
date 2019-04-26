@@ -16,13 +16,12 @@ def main():
 
     f.close()
 
-    f = open('textfile.txt', 'r')
+    with open('textfile.txt', 'r') as f:
+        # f.readline()
+        # read until empty line found
+        for line in iter(f.readline, ''):
+            print(line.strip())
 
-    if f.mode == 'r':
-        fl = f.readlines()
-
-        for x in fl:
-            print(x.strip())
 
     print('\n-------------------------------------\n')
 

@@ -11,6 +11,10 @@ def multi_add(*args):
     return result
 
 
+def fun_arguments(arg1, arg2, *, suppress=False):
+    print(arg1, arg2, suppress)
+
+
 def power(num, x=1):
     result = 1
 
@@ -69,6 +73,9 @@ def main():
     my_function(23)
     my_function(power(2, 6))
     my_function(multi_add(1, 2, 3, 4, 5, 6, 7, 8))
+
+    fun_arguments(23, 'world')
+    fun_arguments(23, 'world', suppress=True)
 
     compare(23, 36)
 
