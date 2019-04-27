@@ -17,6 +17,7 @@ class Person():
         self.lname = 'Marini'
         self.age = 25
 
+    # detailed information for debugging purposes
     def __repr__(self):
         return '<Person Class - fname:{0}, lname:{1}, age{2}>' \
             .format(self.fname, self.lname, self.age)
