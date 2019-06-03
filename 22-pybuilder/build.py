@@ -1,6 +1,8 @@
 # pip install -U --pre pybuilder
 
 # https://pybuilder.github.io/documentation/tutorial.html
+# https://github.com/pybuilder/pybuilder/blob/master/docs/customizing-the-build.rst
+# https://gist.github.com/miebach/9752025
 
 # pyb -t
 # pyb -v
