@@ -1,4 +1,4 @@
-class MyClass():
+class MyClass:
     def method1(self):
         print("myClass method1")
 
@@ -11,7 +11,7 @@ class AnotherClass(MyClass):
         MyClass.method1(self)
         print("anotherClass method1")
 
-    def method2(self):
+    def method2(self, some_string):
         print("anotherClass method2")
 
 
@@ -22,7 +22,7 @@ def main():
 
     c2 = AnotherClass()
     c2.method1()
-    c2.method2()
+    c2.method2("This is another string")
 
 
 if __name__ == "__main__":

@@ -11,9 +11,9 @@ def main():
 
     # ---
 
-    ctemps = [0, 12, 34, 100]
+    c_temps = [0, 12, 34, 100]
 
-    temp_dict = {t: ((t * 9 / 5) + 32) for t in ctemps if (t < 100)}
+    temp_dict = {t: ((t * 9 / 5) + 32) for t in c_temps if (t < 100)}
     print(temp_dict)
     print(temp_dict[12])
 
@@ -24,10 +24,10 @@ def main():
 
     # ---
 
-    ctemps = [5, 10, 12, 14, 10, 23, 41, 30, 12, 24, 12, 18, 29]
+    c_temps = [5, 10, 12, 14, 10, 23, 41, 30, 12, 24, 12, 18, 29]
 
-    ftemps1 = [(t * 9 / 5) + 32 for t in ctemps]
-    ftemps2 = {(t * 9 / 5) + 32 for t in ctemps}
+    ftemps1 = [(t * 9 / 5) + 32 for t in c_temps]
+    ftemps2 = {(t * 9 / 5) + 32 for t in c_temps}
 
     print(ftemps1)
     print(ftemps2)
